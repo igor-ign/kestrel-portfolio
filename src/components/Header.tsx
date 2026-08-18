@@ -93,7 +93,10 @@ export const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <nav aria-label="Mobile navigation" className="md:hidden mt-4 pb-4">
+        <nav
+          aria-label="Mobile navigation"
+          className="absolute left-0 top-full w-full bg-[#0E0C0A] px-6 pb-4 md:hidden"
+        >
           <ul className="flex flex-col gap-4">
             {NAV_LINKS.map((link, index) => (
               <li key={link.href}>
