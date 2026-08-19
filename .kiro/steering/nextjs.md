@@ -1,6 +1,5 @@
 ---
-inclusion: fileMatch
-fileMatchPattern: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx']
+inclusion: always
 ---
 
 # Next.js 16 + Tailwind CSS + TypeScript Conventions
