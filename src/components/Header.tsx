@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { ListIcon, XIcon } from '@phosphor-icons/react';
+import { ListIcon, XIcon } from '@phosphor-icons/react/dist/ssr';
 
 interface NavLink {
   label: string;
@@ -19,8 +19,18 @@ const NAV_LINKS: NavLink[] = [
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
   const firstNavLinkRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -39,7 +49,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0E0C0A] px-6 py-4">
+    <header className={`sticky top-0 z-50 px-6 py-4 transition-all duration-200 border-b ${isScrolled ? 'border-[#282419] bg-[#0E0C0A]/80 backdrop-blur-md' : 'border-transparent bg-[#0E0C0A]'}`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <div className="flex items-center gap-3">
           <Image

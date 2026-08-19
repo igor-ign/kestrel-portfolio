@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "name": "QA hook",
+  "description": "This hook ensures that Kiro always create manual test cases when all tasks from a spec are finished.",
+  "when": {
+    "type": "postTaskExecution"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "When you complete the last task in a spec's task list, generate manual test cases (covering both happy path and edge cases) for that spec. Focus the test cases on the areas affected by the spec's changes, you shouldn't worry about things that are outside of the scope.\n\nIf the completed task is not from a spec, or is not the last task in its spec, skip this step."
+  }
+}
