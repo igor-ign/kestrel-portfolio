@@ -34,7 +34,7 @@ const SERVICES: ServiceCard[] = [
 
 export const Services = () => {
   return (
-    <section id="services" className="w-full bg-[#0E0C0A] px-6 py-8 md:py-10">
+    <section id="services" className="w-full bg-[#0E0C0A] px-6 py-8 md:pt-10 pb-26">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           label="WHAT WE DO"

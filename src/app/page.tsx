@@ -1,4 +1,5 @@
 import { Hero } from '@/components/Hero';
+import { Process } from '@/components/Process';
 import { Services } from '@/components/Services';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="w-full">
       <Hero />
       <Services />
+      <Process />
       <section id="about" className="w-full" />
       <section id="portfolio" className="w-full" />
       <section id="contact" className="w-full" />
