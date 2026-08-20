@@ -6,7 +6,7 @@ export const Hero = () => {
           <span className="font-fraunces font-light text-4xl  md:text-6xl text-[#D7D2C9]">
             We build software
           </span>
-          <span className="font-fraunces font-bold text-4xl md:text-6xl bg-linear-to-r from-[#C9A84C] to-[#967d35] bg-clip-text text-transparent pb-1">
+          <span className="font-fraunces font-regular italic text-4xl md:text-6xl bg-linear-to-r from-[#C9A84C] to-[#967d35] bg-clip-text text-transparent pb-1">
             that moves your business
           </span>
           <span className="font-fraunces font-light text-4xl  md:text-6xl text-[#D7D2C9]">
