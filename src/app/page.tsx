@@ -1,6 +1,7 @@
 import { Hero } from '@/components/Hero';
 import { Process } from '@/components/Process';
 import { Services } from '@/components/Services';
+import { Work } from '@/components/Work';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Process />
+      <Work />
       <section id="about" className="w-full" />
       <section id="portfolio" className="w-full" />
       <section id="contact" className="w-full" />
