@@ -9,10 +9,10 @@ vi.mock('next/image', () => ({
 }));
 
 vi.mock('@phosphor-icons/react', () => ({
-  List: (props: Record<string, unknown>) => (
+  ListIcon: (props: Record<string, unknown>) => (
     <svg data-testid="list-icon" {...props} />
   ),
-  X: (props: Record<string, unknown>) => (
+  XIcon: (props: Record<string, unknown>) => (
     <svg data-testid="x-icon" {...props} />
   ),
 }));
@@ -98,7 +98,7 @@ describe('Header mobile menu behavior', () => {
     fireEvent.click(toggleButton);
 
     const mobileNav = screen.getByLabelText('Mobile navigation');
-    const firstNavLink = mobileNav.querySelector('a[href="#about"]') as HTMLElement;
+    const firstNavLink = mobileNav.querySelector('a[href="#services"]') as HTMLElement;
 
     expect(document.activeElement).toBe(firstNavLink);
   });

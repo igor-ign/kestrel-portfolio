@@ -36,7 +36,7 @@ describe('Header rendering and accessibility', () => {
 
   it('renders all navigation links on desktop viewport', () => {
     render(<Header />);
-    const expectedLinks = ['About', 'Services', 'Portfolio', 'Contact'];
+    const expectedLinks = ['Services', 'Process', 'Work', 'About', 'Contact'];
     expectedLinks.forEach((linkText) => {
       expect(screen.getByRole('link', { name: linkText })).toBeInTheDocument();
     });
@@ -47,7 +47,7 @@ describe('Header rendering and accessibility', () => {
     const ctaLinks = screen.getAllByRole('link', { name: 'Start a project' });
     const desktopCta = ctaLinks[0];
     expect(desktopCta).toBeInTheDocument();
-    expect(desktopCta.className).toContain('bg-[#C9A84C]');
+    expect(desktopCta.className).toContain('from-[#C9A84C]');
     expect(desktopCta.className).toContain('text-[#0E0C0A]');
   });
 

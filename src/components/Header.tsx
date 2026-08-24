@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { ListIcon, XIcon } from '@phosphor-icons/react/dist/ssr';
+import { ListIcon, XIcon } from '@phosphor-icons/react';
 
 interface NavLink {
   label: string;
