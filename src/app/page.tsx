@@ -1,3 +1,4 @@
+import { About } from '@/components/About';
 import { Hero } from '@/components/Hero';
 import { Process } from '@/components/Process';
 import { Services } from '@/components/Services';
@@ -10,7 +11,7 @@ export default function Home() {
       <Services />
       <Process />
       <Work />
-      <section id="about" className="w-full" />
+      <About />
       <section id="portfolio" className="w-full" />
       <section id="contact" className="w-full" />
     </main>
