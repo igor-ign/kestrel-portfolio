@@ -14,21 +14,21 @@ const SERVICES: ServiceCard[] = [
     title: 'Web Design',
     description:
       'Interfaces that convert. Every pixel earns its place — designed for clarity, built to impress the people who matter most to your business.',
-    tags: ['UI/UX', 'Prototyping', 'Design Systems'],
+    tags: ['User-Friendly Design', 'Interactive Previews', 'Consistent Branding'],
   },
   {
     icon: <CodeIcon size={20} className="text-[#C9A84C]" />,
     title: 'Fullstack Development',
     description:
       'From database schema to deployment pipeline. We ship production-grade software that scales with your ambitions, not against them.',
-    tags: ['React', 'Node.js', 'PostgreSQL'],
+    tags: ['Fast & Responsive', 'Secure Data', 'Built to Scale'],
   },
   {
     icon: <StackIcon size={20} className="text-[#C9A84C]" />,
     title: 'Custom Applications',
     description:
       'Off-the-shelf software has off-the-shelf limitations. We build the exact tool your workflow demands — precise, maintainable, and yours.',
-    tags: ['SaaS', 'Internal Tools', 'Integrations'],
+    tags: ['Tailored to You', 'Team Productivity', 'Connects Your Tools'],
   },
 ];
 

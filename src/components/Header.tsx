@@ -12,7 +12,8 @@ interface NavLink {
 const NAV_LINKS: NavLink[] = [
   { label: 'Services', href: '#services' },
   { label: 'Process', href: '#process' },
-  { label: 'Work', href: '#work' },
+  // TODO - Remove comment from "Work" when we have real client cases to show
+ // { label: 'Work', href: '#work' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ];
