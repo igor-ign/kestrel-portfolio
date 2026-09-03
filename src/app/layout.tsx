@@ -15,7 +15,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Kestrel Portfolio",
+  title: "Kestrel Systems",
   description: "Professional portfolio",
 };
 
